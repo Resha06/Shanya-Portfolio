@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shanya Resha C | Portfolio</title>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- AOS CSS for scroll animations -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  
+  <style>
+    /* Global Styles */
+    * { margin:0; padding:0; box-sizing:border-box; font-family: 'Poppins', sans-serif; }
+    html { scroll-behavior: smooth; }
+    body { background-color: #121212; color: #e0e0e0; line-height: 1.6; }
+
+    a { text-decoration: none; color: inherit; }
+
+    /* Header */
+    header {
+      position: sticky;
+      top:0;
+      background: linear-gradient(90deg, #008080, #333);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      z-index: 1000;
+      transition: top 0.3s;
+    }
+    header h1 { font-size: 24px; font-weight: 700; color: #fff; }
+    .social-icons a {
+      margin-left: 15px;
+      font-size: 1.3rem;
+      color: #00ced1;
+      transition: 0.3s;
+    }
+    .social-icons a:hover { color: #ff69b4; transform: scale(1.2); }
+    .resume-btn {
+      margin-left: 20px;
+      padding: 8px 15px;
+      border-radius: 5px;
+      background-color: #00ced1;
+      color: #000;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+    .resume-btn:hover { background-color: #ff69b4; color:#fff; transform: scale(1.05); }
+
+    /* Sections */
+    section {
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 30px;
+      background: #1c1c1c;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    section:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0,0,0,0.7); }
+    section h2 {
+      color: #00ced1;
+      border-bottom: 2px solid #ff69b4;
+      padding-bottom: 5px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    ul { list-style: inside disc; margin-left: 20px; }
+    li { margin-bottom: 8px; }
+
+    /* Skills */
+    .skills-list { display: flex; flex-wrap: wrap; gap: 10px; }
+    .skills-list span {
+      background: #008080;
+      color: #fff;
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+    .skills-list span:hover { background: #ff69b4; transform: scale(1.05); }
+
+    /* Contact form */
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+    input, textarea {
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #333;
+      background: #222;
+      color: #eee;
+      font-size: 1rem;
+      width: 100%;
+    }
+    input:focus, textarea:focus { outline: 2px solid #00ced1; }
+    button { padding: 10px 20px; border:none; border-radius:5px; background:#00ced1; color:#000; font-weight:600; cursor:pointer; transition:0.3s; }
+    button:hover { background:#ff69b4; color:#fff; transform: scale(1.05); }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #000;
+      color: #00ced1;
+      border-top: 1px solid #333;
+    }
+    footer a { color:#ff69b4; margin:0 10px; font-size:1.3rem; transition:0.3s; }
+    footer a:hover { transform: scale(1.2); }
+
+    /* Responsive */
+    @media(max-width:768px) {
+      header { flex-direction: column; gap:10px; text-align:center; }
+      .social-icons { margin-top:5px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header id="header">
+    <h1>Shanya Resha C</h1>
+    <div>
+      <a href="mailto:shanyarithanya@gmail.com" class="social-icons"><i class="fa-solid fa-envelope"></i></a>
+      <a href="https://www.linkedin.com/in/shanya-resha-chandraseharan0602" target="_blank" class="social-icons"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://github.com/Resha06" target="_blank" class="social-icons"><i class="fa-brands fa-github"></i></a>
+      <a href="https://resha06.github.io/" target="_blank" class="social-icons"><i class="fa-solid fa-globe"></i></a>
+      <a href="https://resha06.github.io/Shanya-Portfolio/resume.pdf" target="_blank" class="resume-btn">Download Resume</a>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section id="about" data-aos="fade-right">
+    <h2>👩‍🎓 About Me</h2>
+    <p>I'm an enthusiastic Data Science student passionate about Machine Learning, AI, and data visualization. Skilled in Python, TensorFlow, Scikit-learn, and Power BI, I enjoy solving real-world problems and transforming data into meaningful insights.</p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" data-aos="fade-left">
+    <h2>🧠 Skills</h2>
+    <div class="skills-list">
+      <span>Python</span>
+      <span>R</span>
+      <span>TensorFlow</span>
+      <span>Scikit-learn</span>
+      <span>Pandas</span>
+      <span>NumPy</span>
+      <span>Matplotlib</span>
+      <span>Seaborn</span>
+      <span>Power BI</span>
+      <span>Teamwork</span>
+      <span>Problem Solving</span>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" data-aos="fade-up">
+    <h2>💡 Projects</h2>
+    <ul>
+      <li><strong>Water Quality Analysis</strong> — ML project using Decision Tree, Random Forest, and SVM.</li>
+      <li><strong>Smart Door Lock</strong> — Fingerprint-based Arduino project for home security.</li>
+      <li><strong>Predictive Analytics Project</strong> — Forecast sales trends using Scikit-learn.</li>
+      <li><strong>Image Classification using TensorFlow</strong> — Built a CNN to classify images.</li>
+    </ul>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" data-aos="fade-right">
+    <h2>💼 Experience</h2>
+    <div class="experience-item">
+      <p><strong>Vcodez – Machine Learning Intern</strong> (Currently pursuing internship)</p>
+    </div>
+    <div class="experience-item">
+      <p><strong>Infologia Technologies Pvt Ltd – Support and Service</strong> (May 2024 – June 2024)</p>
+      <ul>
+        <li>Completed 90 hours of internship</li>
+        <li>Provided support and service</li>
+        <li>Created minor Data Visualizations in Power BI using SQL Server datasets</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Certifications -->
+  <section id="certifications" data-aos="fade-left">
+    <h2>🎓 Certifications</h2>
+    <ul>
+      <li>Student Development Program on Programming in C — E & ICT Academy, IIT Kanpur</li>
+      <li>Acquiring Data (Level 1 - AI Fundamentals) — ASCEND by Accenture</li>
+      <li>Data Analysis with Open AI API — Coursera</li>
+      <li>Introduction to Android Mobile App Development — Meta</li>
+      <li>Introduction to Embedded Machine Learning — Edge Impulse</li>
+      <li>Introduction to Microsoft Excel — Coursera</li>
+      <li>Data Visualization in Excel — Macquarie University</li>
+      <li>Using Basic Formulas and Functions in Excel — Coursera</li>
+      <li>Cloud Computing Basics — LearnQuest</li>
+      <li>Customer Service with Python: Build a Chatbot using ChatGPT — Coursera</li>
+      <li>Introduction to MongoDB, AI, and Vector Search — ICT Academy Learnathon</li>
+    </ul>
+  </section>
+
+  <!-- Achievements -->
+  <section id="achievements" data-aos="fade-up">
+    <h2>🏆 Achievements</h2>
+    <ul>
+      <li>Participated in Tech Expo 2022 organized by SDNB Vaishnav College — Certificate of Participation</li>
+      <li>Completed Git Training Program conducted by IIT Bombay — scored 80%</li>
+      <li>Recognized for 100% attendance in academic years 2012–2013 and 2018–2019</li>
+      <li>Best Volunteer Service in SMRTI’23 – Eterna, Mega Intercollegiate Cultural Fest</li>
+    </ul>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" data-aos="fade-left">
+    <h2>📞 Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p style="text-align:center; margin-top:15px;">Or reach me at: <a href="mailto:shanyarithanya@gmail.com">shanyarithanya@gmail.com</a></p>
+  </section>
+
+  <section id="resume" data-aos="fade-up">
+    <h2>🧾 Resume</h2>
+    <iframe src="https://docs.google.com/gview?url=https://resha06.github.io/Shanya-Portfolio/resume.pdf&embedded=true" width="100%" height="600px" style="border:1px solid #333; border-radius:10px;"></iframe>
+  </section>
+
+  <!-- Footer -->
+  <footer data-aos="fade-up">
+    <p>© 2025 Shanya Resha C | All Rights Reserved</p>
+  </footer>
+
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration:1000, once:true });
+
+    // Sticky header hide/show on scroll
+    let prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+      let currentScrollPos = window.pageYOffset;
+      const header = document.getElementById("header");
+      if (prevScrollpos > currentScrollPos) { header.style.top = "0"; }
+      else { header.style.top = "-100px"; }
+      prevScrollpos = currentScrollPos;
+    }
+  </script>
+</body>
+</html>

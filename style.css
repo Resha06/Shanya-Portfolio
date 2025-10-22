@@ -1,0 +1,94 @@
+/* ===== GENERAL STYLE ===== */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* ===== NAVBAR ===== */
+nav {
+  background-color: #023e8a;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: #ffd60a;
+}
+
+/* ===== HEADER ===== */
+header {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #0077b6;
+  color: white;
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid white;
+  margin-bottom: 15px;
+}
+
+/* ===== SECTIONS ===== */
+section {
+  padding: 50px 80px;
+  max-width: 900px;
+  margin: auto;
+}
+
+h2 {
+  color: #0077b6;
+  border-bottom: 2px solid #0077b6;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+ul {
+  list-style-type: square;
+  margin-top: 10px;
+}
+
+li {
+  margin: 10px 0;
+  font-size: 1.1em;
+}
+
+/* ===== LINKS ===== */
+a {
+  color: #0077b6;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #023e8a;
+  color: white;
+  margin-top: 40px;
+}
